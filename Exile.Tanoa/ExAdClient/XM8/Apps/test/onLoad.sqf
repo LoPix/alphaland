@@ -8,7 +8,7 @@ _rightCol = _leftCol + _leftColW + 2;
 _rightColW = _leftColW + 3;
 _margin = 0.2;
 
-_slideClass = "ExAd_Regeln";
+_slideClass = "ExAd_test";
 
 [_display,_slide,([_slideClass,"backButton"] call ExAd_fnc_getNextIDC),[27 * _pW, 17 * _pH, 6 * _pW, 1 * _pH],'["extraApps", 1] call ExileClient_gui_xm8_slide;',STR_ExAd_VG_APP_BTN_BACK] call ExAd_fnc_createButton;
 

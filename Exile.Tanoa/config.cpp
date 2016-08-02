@@ -7812,14 +7812,14 @@ class CfgVon
 
 class CfgXM8
 {
-	extraApps[] = {"ExAd_Regeln","ExAd_Rules","ExAd_CHVD","ExAd_Bike","ExAd_Scratchie","ExAd_ScratchieBuy","ExAd_ScratchiePrize","ExAd_PlayerScan","ExAd_Selfie","ExAd_Chemlight","BRAmaRecipes"};
+	extraApps[] = {"ExAd_test","ExAd_Rules","ExAd_CHVD","ExAd_Bike","ExAd_Scratchie","ExAd_ScratchieBuy","ExAd_ScratchiePrize","ExAd_PlayerScan","ExAd_Selfie","ExAd_Chemlight","BRAmaRecipes"};
 	
-	class ExAd_Regeln 
+	class ExAd_test 
 	{
 		controlID = 50000;					//IDC:50000 -> 50015 || These need to be unique and out of range from each other 
-		title = "Server Regeln";		
-		logo = "ExadClient\XM8\Apps\rules\rules.paa";		
-		onLoad = "ExAdClient\XM8\Apps\regeln\onLoad.sqf";
+		title = "test";		
+		logo = "ExadClient\XM8\Apps\rules\rules.paa";	
+		onLoad = "ExAdClient\XM8\Apps\test\onLoad.sqf";
 	};	
 	class ExAd_Rules 
 	{
@@ -7866,7 +7866,7 @@ class CfgXM8
 	class ExAd_ScratchiePrize 
 	{
 		controlID = 50600;					//IDC:50100 -> 50102 || These need to be unique and out of range from each other
-		title = "Preis abholen";		
+		title = "obtenir le prix";		
 		logo = "ExadClient\XM8\Apps\ScratchiePrize\scratchie-prize.paa";		
 		onLoad = "ExAdClient\XM8\Apps\ScratchiePrize\onLoad.sqf";
 	};
