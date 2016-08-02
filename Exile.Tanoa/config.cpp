@@ -3739,7 +3739,7 @@ class CfgExileLootSettings
 	 * set this to a lower value than the maximum radius of a territory,
 	 * which is 150m by default.
 	 */
-	minimumDistanceToTerritories = 0;
+	minimumDistanceToTerritories = 150;
 };
 class CfgExileMobileXM8
 {
@@ -4698,16 +4698,16 @@ class CfgTerritories
 	prices[] = 
 	{
 		// Purchase Price 		Radius 		Number of Objects
-		{50000,					15,			30 					}, // Level 1	//geändert
-		{100000,				30,			50 					}, // Level 2	//geändert 
-		{150000,				45,			70 					}, // Level 3	//geändert
-		{200000,				60,			90					}, // Level 4	//geändert
-		{250000,				75,			110					}, // Level 5	//geändert
-		{300000,				90,			130					}, // Level 6	//geändert
-		{350000,				105,		150					}, // Level 7	//geändert
-		{400000,				120,		170					}, // Level 8	//geändert
-		{450000,				135,		190					}, // Level 9	//geändert
-		{500000,				150,		210					}  // Level 10	//geändert
+		{50000,					15,			300 					}, // Level 1	//geändert
+		{100000,				30,			500 					}, // Level 2	//geändert 
+		{150000,				45,			700 					}, // Level 3	//geändert
+		{200000,				60,			900						}, // Level 4	//geändert
+		{250000,				75,			1100					}, // Level 5	//geändert
+		{300000,				90,			1300					}, // Level 6	//geändert
+		{350000,				105,		1500					}, // Level 7	//geändert
+		{400000,				120,		1700					}, // Level 8	//geändert
+		{450000,				135,		1900					}, // Level 9	//geändert
+		{500000,				150,		2100					}  // Level 10	//geändert
 	};
 
 	// A shortcut of the above maximum radius
