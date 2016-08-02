@@ -3826,13 +3826,13 @@ class CfgInteractionMenus
 			// Repairs a vehicle
             class Repair: ExileAbstractAction
             {
-               title = "R&eacute;paration compl&egrave;te";
+               title = "Reparation complete";
                condition = "true";
                action = "_this call JohnO_fnc_vehicleRepairCar";
             };
             class RepairWheels: ExileAbstractAction
             {
-               title = "R&eacute;paration des Roues";
+               title = "Reparation des Roues";
                condition = "call ExileClient_object_vehicle_interaction_show";
                action = "_this call JohnO_fnc_repairWheels";
             };
@@ -3916,13 +3916,13 @@ class CfgInteractionMenus
 			// Repairs a vehicle
             class RepairMajor: ExileAbstractAction
             {
-               title = "R&eacute;paration compl&egrave;te";
+               title = "Reparation complete";
                condition = "true";
                action = "_this call JohnO_fnc_repairchopper";
             };
             class RepairMinor: ExileAbstractAction
             {
-               title = "R&eacute;paration mineure";
+               title = "Reparation mineure";
                condition = "true";
                action = "_this call JohnO_fnc_repairchopperhalf";
             };
@@ -4053,7 +4053,7 @@ class CfgInteractionMenus
 
 			class Unmount: ExileAbstractAction
 			{
-				title = "d&eacute;montez";
+				title = "demontez";
 				condition = "!(isNull (attachedTo ExileClientInteractionObject)) && ((ExileClientInteractionObject getvariable ['ExileOwnerUID',1]) isEqualTo 1)";
 				action = "_this call ExileClient_object_supplyBox_unmount";
 			};
@@ -4717,7 +4717,7 @@ class CfgTerritories
 	minimumDistanceToOtherTerritories = 325; 
 
 	// Maximum number of territories a player can own
-	maximumNumberOfTerritoriesPerPlayer = 1;
+	maximumNumberOfTerritoriesPerPlayer = 10;
 
 	/**
 	 * Defines the minimum distance to safe zones / trader cities where players
@@ -4838,7 +4838,7 @@ class CfgTraderCategories
 
 	class Uniforms
 	{
-		name = "Bekleidung";
+		name = "Uniforms";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\uniform_ca.paa";
 		items[] = 
 		{
@@ -4958,7 +4958,7 @@ class CfgTraderCategories
 
 	class Vests
 	{
-		name = "Westen";
+		name = "Gilets";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\vest_ca.paa";
 		items[] = 
 		{
@@ -5021,7 +5021,7 @@ class CfgTraderCategories
 
 	class Kopfbedeckung 
 	{
-		name = "Kopfbedeckung";
+		name = "casque";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\headgear_ca.paa";
 		items[] =
 		{
@@ -5167,7 +5167,7 @@ class CfgTraderCategories
 
 	class PointerAttachments 
 	{
-		name = "Laserpointer/Taschenlampe";
+		name = "Pointeur laser / lampe de poche";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] = 
 		{
@@ -5178,7 +5178,7 @@ class CfgTraderCategories
 
 	class BipodAttachments 
 	{
-		name = "Zweibeine";
+		name = "BiPod";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itembipod_ca.paa";
 		items[] = 
 		{
@@ -5196,7 +5196,7 @@ class CfgTraderCategories
 
 	class MuzzleAttachments 
 	{
-		name = "Schalldämpfer";
+		name = "silencieux";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemmuzzle_ca.paa";
 		items[] = 
 		{
@@ -5229,7 +5229,7 @@ class CfgTraderCategories
 
 	class UAVs
 	{
-		name = "Unbemannte Luftfahrzeuge";
+		name = "UAV";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\gps_ca.paa";
 		items[] = 
 		{
@@ -5244,7 +5244,7 @@ class CfgTraderCategories
 
 	class StaticMGs
 	{
-		name = "Statisches Maschinengewehr";
+		name = "Machine gun statique";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] = 
 		{
@@ -5325,7 +5325,7 @@ class CfgTraderCategories
 
 	class Food 
 	{
-		name = "Essen";
+		name = "nourriture";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] =
 		{
@@ -5352,7 +5352,7 @@ class CfgTraderCategories
 
 	class Zeitschriften
 	{
-		name = "Zeitschriften";
+		name = "Journaux";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] = 
 		{			
@@ -5365,7 +5365,7 @@ class CfgTraderCategories
 
 	class Sonstiges
 	{
-		name = "Sonstiges";
+		name = "autre";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] = 
 		{						
@@ -5377,7 +5377,7 @@ class CfgTraderCategories
 	
 	class Drinks 
 	{
-		name = "Getränke";
+		name = "boissons";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] =
 		{
@@ -5394,7 +5394,7 @@ class CfgTraderCategories
 
 	class Brillen
 	{
-		name = "Brillen und co.";
+		name = "Lunettes";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] = 
 		{
@@ -5444,7 +5444,7 @@ class CfgTraderCategories
 
 	class Fernglaeser
 	{
-		name = "Ferngläser";
+		name = "jumelles";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] = 
 		{					
@@ -5455,7 +5455,7 @@ class CfgTraderCategories
 
 	class Nachtsichtgeraete
 	{
-		name = "Nachtsichtgeräte";
+		name = "vision de nuit";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] = 
 		{								
@@ -5486,7 +5486,7 @@ class CfgTraderCategories
 
 	class Medikamente
 	{
-		name = "Medikamente";
+		name = "MediKit";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] = 
 		{
@@ -5499,7 +5499,7 @@ class CfgTraderCategories
 
 	class Navigat
 	{
-		name = "Lasermarkierer";
+		name = "Navigat";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] = 
 		{
@@ -5513,7 +5513,7 @@ class CfgTraderCategories
 	
 	class Navigation
 	{
-		name = "Spezielle Ausrüstung";
+		name = "Navigation";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] = 
 		{
@@ -5532,7 +5532,7 @@ class CfgTraderCategories
 
 	class Backpacks
 	{
-		name = "Rucksäcke";
+		name = "Sac";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 		items[] = 
 		{
@@ -5773,7 +5773,7 @@ class CfgTraderCategories
 
 	class Spezielles
 	{
-		name = "Spezielles";
+		name = "special";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargothrow_ca.paa";
 		items[] = 
 		{
@@ -5783,7 +5783,7 @@ class CfgTraderCategories
 	
 	class Pistols 
 	{
-		name = "Pistolen";
+		name = "Pistols";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 		items[] = 
 		{
@@ -5804,7 +5804,7 @@ class CfgTraderCategories
 
 	class SubMachineGuns 
 	{
-		name = "Sub Maschinengewehre";
+		name = "Sub MachineGuns";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] = 
 		{
@@ -5817,7 +5817,7 @@ class CfgTraderCategories
 
 	class LightMachineGuns 
 	{
-		name = "Leichte Maschinengewehre";
+		name = "Light MachineGuns";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] = 
 		{
@@ -5847,7 +5847,7 @@ class CfgTraderCategories
 
 	class AssaultRifles
 	{
-		name = "Sturmgewehre";
+		name = "Assault Rifles";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] = 
 		{
@@ -5913,7 +5913,7 @@ class CfgTraderCategories
 	
 	class SniperRifles
 	{
-		name = "Scharfschützengewehre";
+		name = "SniperRifles";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] = 
 		{
@@ -5971,7 +5971,7 @@ class CfgTraderCategories
 
 	class Cars
 	{
-		name = "Fahrzeuge";
+		name = "Vehicule";
 		icon = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemacc_ca.paa";
 		items[] = 
 		{
@@ -7859,7 +7859,7 @@ class CfgXM8
 	class ExAd_ScratchieBuy 
 	{
 		controlID = 50500;					//IDC:50100 -> 50102 || These need to be unique and out of range from each other
-		title = "Rubbellos Kaufen";		
+		title = "scratchcard Acheter";		
 		logo = "ExadClient\XM8\Apps\ScratchieBuy\scratchie-buy.paa";		
 		onLoad = "ExAdClient\XM8\Apps\ScratchieBuy\onLoad.sqf";
 	};
@@ -7895,7 +7895,7 @@ class CfgXM8
 	class BRAmaRecipes 
 	{
 		controlID = 107000;
-		title = "Rezepte";		
+		title = "recettes";		
 		logo = "ExAdClient\XM8\Apps\BRAmaRecipes\BRAma.paa";
 		config = "ExAdClient\XM8\Apps\BRAmaRecipes\config.sqf";
 		onLoad = "ExAdClient\XM8\Apps\BRAmaRecipes\onLoad.sqf";

@@ -66,7 +66,7 @@ showHUD[] =
 };
 
 #include "config.cpp"
-#include "infiSTAR_Exile_AdminMenu.hpp"
+
 
 class RscTitles
 {
@@ -129,11 +129,26 @@ class CfgRemoteExec
         class AVS_fnc_refuelPayment { allowedTargets=2; };
         class AVS_fnc_refuelVehicle	{ allowedTargets=2; };
 		class AVS_fnc_fillCanister	{ allowedTargets=2; };
-        class ExAdServer_fnc_clientRequest { allowedTargets=2; };		
+        class ExAdServer_fnc_clientRequest { allowedTargets=2; };	
+		class AdminToolkit_network_receiveRequest { allowedTargets = 2; };	
 	};
 	class Commands
 	{
 		mode=0;
 		jip=0;
 	};
+};
+class CfgAdminToolkitCustomMod {
+    // Used to replace the top menu button text (optional)
+    //AdminToolkit_MenuTitle[] = {"Players", "Vehicles", "Weapons", "AI", "Buildings", "Items"};
+
+    // Used for server-side execution (optional)
+    //AdminToolkit_ModEnable = "";
+
+    //AdminToolkit_Mod_Players = "";
+    AdminToolkit_Mod_Vehicles = "atk\AdminToolkit_Vehicles_Exile.sqf";
+    //AdminToolkit_Mod_Weapons = "";
+    //AdminToolkit_Mod_Custom = "";
+    //AdminToolkit_Mod_Other = "";
+    //AdminToolkit_Mod_Items = "";
 };
