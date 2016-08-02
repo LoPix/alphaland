@@ -128,7 +128,7 @@ R3F_LOG_CFG_language = switch (language) do
 	//case "Portuguese":{"pt"}; // Not supported. Need your own "pt_strings_lang.sqf"
 	//case "YOUR_GAME_LANGUAGE":{"LANGUAGE_CODE"};  // Need your own "LANGUAGE_CODE_strings_lang.sqf"
 	
-	default {"en"}; // If language is not supported, use English
+	default {"fr"}; // If language is not supported, use English
 };
 
 /**

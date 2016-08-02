@@ -54,7 +54,7 @@ _newControl ctrlSetTooltip format["Rubbellos 200 poptabs"];
 _newControl ctrlSetEventHandler ["ButtonClick", "['buy',ExileClientSessionId, player, ''] remoteExecCall ['ExileServer_lottery_network_request', 2];"];
 
 _newControl = _display displayCtrl 5010;
-_newControl ctrlSetTooltip format["Herzlichen Glückwunsch du hast gewonnen!"];
+_newControl ctrlSetTooltip format["Felicitations, vous avez gagne!"];
 //_newControl ctrlSetText "Preis abholen";
 _newControl ctrlSetEventHandler ["ButtonClick", "['get',ExileClientSessionId, player, ''] remoteExecCall ['ExileServer_lottery_network_request', 2];"];
 

@@ -29,7 +29,7 @@ addons[]=
 		"ryanzombiesfunctions",
 		"Ryanzombiesanims",
 		"Ryanzombiesfaces",
-		"a3_map_altis"
+		"a3_map_tanoa"
 	};
 class AddonsMetaData
 {
