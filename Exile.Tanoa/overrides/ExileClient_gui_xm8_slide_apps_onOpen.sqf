@@ -68,8 +68,8 @@ _newControl call updateScratchieText;
 
 _newControl = _display displayCtrl 5004;
 _newControl ctrlSetTooltip format["Server Regeln lesen..."];
-//_newControl ctrlSetText "Server Regeln";
-_newControl ctrlSetEventHandler ["ButtonClick", "execVM'ExAdClient\XM8\Apps\regeln\regeln.sqf';"];
+//_newControl ctrlSetText "test";
+_newControl ctrlSetEventHandler ["ButtonClick", "execVM'ExAdClient\XM8\Apps\test\test.sqf';"];
 
 _newControl = _display displayCtrl 5005;
 _newControl ctrlSetTooltip format["Read the server rules..."];
